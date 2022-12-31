@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "702107882925",
+    "project_id": "tournament-hub-27a30",
+    "storage_bucket": "tournament-hub-27a30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702107882925:android:aab3a4f390eaab0e817d24",
+        "android_client_info": {
+          "package_name": "com.codrax.tournamenthub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702107882925-kd2omn2mct2bjuf29802cj3j1pb8p33m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDSZLhRTHOjgpfvKUwWgjKwiqOj_u7MIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702107882925-kd2omn2mct2bjuf29802cj3j1pb8p33m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

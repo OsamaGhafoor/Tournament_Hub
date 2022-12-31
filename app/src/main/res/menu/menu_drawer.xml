@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item1"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/item2"
+            android:icon="@drawable/ic_baseline_calendar_month_24"
+            android:title="Calender" />
+        <item
+            android:id="@+id/item3"
+            android:icon="@drawable/ic_baseline_notifications_none_24"
+            android:title="Notification" />
+        <item
+            android:id="@+id/item4"
+            android:icon="@drawable/ic_baseline_feedback_24"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/item5"
+            android:icon="@drawable/ic_baseline_local_phone_24"
+            android:title="Contact Us !" />
+        <item
+            android:id="@+id/item6"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="Logout" />
+    </group>
+
+</menu>
