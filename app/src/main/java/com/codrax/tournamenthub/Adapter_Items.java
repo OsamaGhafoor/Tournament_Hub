@@ -42,15 +42,14 @@ public class Adapter_Items extends RecyclerView.Adapter<Adapter_Items.HolderAndr
         holder.name.setText(heading_tv);
         holder.image1.setImageResource(image_1);
 
-        /*holder.image1.setOnClickListener(new View.OnClickListener() {
+        holder.image1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context , List_News.class);
+                Intent intent = new Intent(context , Option_Class.class);
                 intent.putExtra("cat" , androidArrayList.get(holder.getAdapterPosition()).getName());
                 context.startActivity(intent);
-                Animatoo.animateZoom(context);
             }
-        });*/
+        });
     }
 
     @Override

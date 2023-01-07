@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shape_gradient_dark"
+    tools:context=".Option_Class"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team Play"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/team_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/team"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team Play"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/tournament_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tournament"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tournament"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>
