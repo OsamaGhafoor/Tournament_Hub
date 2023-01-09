@@ -50,6 +50,7 @@
         app:tint="#009688" />
 
     <ImageView
+        android:id="@+id/event_goto"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -62,6 +63,7 @@
         app:tint="#009688" />
 
     <ImageView
+        android:id="@+id/notificaiton_goto"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentRight="true"

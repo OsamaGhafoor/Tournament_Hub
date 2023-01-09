@@ -192,6 +192,34 @@ public class Join_Form extends AppCompatActivity {
                 Uri uriImage = uriTask.getResult();
                 imageURL = uriImage.toString();
                 uploadTest();
+                uploadNoti();
+            }
+        });
+    }
+
+    private void uploadNoti() {
+        String name_text = name.getText().toString().trim()+" - Joined the Team "+ team_name.getText().toString().trim() +" in Tournament Hub.";
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd ~ hh:mm:ss aa");
+        String currentDateAndTime = sdf.format(new Date());
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Notification").child(currentDateAndTime);
+        HashMap<String, String> hashMap = new HashMap<>();
+
+        hashMap.put("name", name_text);
+
+        reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()) {
+                    Toast.makeText(Join_Form.this, "Test Uploaded", Toast.LENGTH_SHORT).show();
+                    finish();
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(Join_Form.this, "Failed to Upload..." , Toast.LENGTH_SHORT).show();
             }
         });
     }

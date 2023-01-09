@@ -8,10 +8,13 @@ import androidx.core.view.GravityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     FirebaseAuth firebaseAuth;
     private CardDrawerLayout drawer;
+    ImageView event_goto , notificaiton_goto ;
 
     private String[] catagories_name = {
             "Cricket",
@@ -52,6 +56,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+        event_goto = findViewById(R.id.event_goto);
+        notificaiton_goto = findViewById(R.id.notificaiton_goto);
+
         drawer = (CardDrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this,
@@ -71,6 +78,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         catagories_recycler = findViewById(R.id.recycler_catagories);
         load_catagories();
+
+        event_goto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this , List_Event.class);
+                startActivity(intent);
+            }
+        });
+
+        notificaiton_goto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this , Notification_Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void load_catagories() {

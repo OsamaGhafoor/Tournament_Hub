@@ -122,7 +122,7 @@ public class Create_Form extends AppCompatActivity {
             public void onClick(View view) {
                 String name_team = team_name.getText().toString().trim();
                 if (name_team.isEmpty()){
-                    Toast.makeText(Create_Form.this, "Enter Price of Property", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Create_Form.this, "Enter Name of Team", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     uploadImage();
@@ -163,6 +163,34 @@ public class Create_Form extends AppCompatActivity {
                 Uri uriImage = uriTask.getResult();
                 imageURL = uriImage.toString();
                 uploadTest();
+                uploadNoti();
+            }
+        });
+    }
+
+    private void uploadNoti() {
+        String name = team_name.getText().toString().trim()+" - new Team Created in Tournament Hub.";
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd ~ hh:mm:ss aa");
+        String currentDateAndTime = sdf.format(new Date());
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Notification").child(currentDateAndTime);
+        HashMap<String, String> hashMap = new HashMap<>();
+
+        hashMap.put("name", name);
+
+        reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()) {
+                    Toast.makeText(Create_Form.this, "Test Uploaded", Toast.LENGTH_SHORT).show();
+                    finish();
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(Create_Form.this, "Failed to Upload..." , Toast.LENGTH_SHORT).show();
             }
         });
     }
