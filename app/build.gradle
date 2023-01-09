@@ -44,4 +44,8 @@ dependencies {
 
     // Navigation bar
     implementation 'com.github.RupinSahu:CardDrawer:-SNAPSHOT'
+    // glide image
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    // rounded corner imageview
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 }

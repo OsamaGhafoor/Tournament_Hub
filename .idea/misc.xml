@@ -10,9 +10,12 @@
         <entry key="app/src/main/res/drawable/shape_gradient.xml" value="0.10270843505859367" />
         <entry key="app/src/main/res/drawable/shape_gradient_dark.xml" value="0.131" />
         <entry key="app/src/main/res/drawable/shape_gradient_dark2.xml" value="0.131" />
+        <entry key="app/src/main/res/layout/activity_all_teams.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/layout/activity_ask_desicion.xml" value="0.25677083333333334" />
         <entry key="app/src/main/res/layout/activity_create_form.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/layout/activity_join_form.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/activity_list_players.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/layout/activity_list_team.xml" value="0.25677083333333334" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.18632478632478633" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20185185185185187" />
         <entry key="app/src/main/res/layout/activity_main_content.xml" value="0.2715057373046875" />
@@ -20,7 +23,10 @@
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25677083333333334" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2847682119205298" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/layout/row_all_teams.xml" value="0.2557291666666667" />
         <entry key="app/src/main/res/layout/row_item.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/layout/row_players.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/layout/row_teams.xml" value="0.2557291666666667" />
         <entry key="app/src/main/res/menu/menu_drawer.xml" value="0.25677083333333334" />
       </map>
     </option>
